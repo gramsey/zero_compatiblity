@@ -1,0 +1,12 @@
+
+minetest.register_alias("doors:door_wood", "apple:door")
+minetest.register_alias("doors:gate_acacia_wood", "acacia:gate")
+minetest.register_alias("doors:gate_aspen_wood", "aspen:gate")
+minetest.register_alias("doors:gate_junglewood", "jungle:gate")
+minetest.register_alias("doors:gate_pine_wood", "pine:gate")
+minetest.register_alias("doors:gate_wood", "apple:gate")
+minetest.register_alias("doors:hidden", "door:hidden")
+minetest.register_alias("doors:trapdoor", "apple:trapdoor")
+minetest.register_alias("doors:trapdoor_open", "apple:trapdoor_open")
+minetest.register_alias("doors:trapdoor_steel", "iron:trapdoor")
+minetest.register_alias("doors:trapdoor_steel", "iron:trapdoor_open")
