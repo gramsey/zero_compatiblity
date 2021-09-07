@@ -50,12 +50,15 @@ function def_alias(def)
 	def.inventory_overlay = apply_alias(def.inventory_overlay)
 	def.wield_image = apply_alias(def.wield_image)
 	def.wield_overlay = apply_alias(def.wield_overlay)
+	def.blood_texture = apply_alias(def.blood_texture)
+	def.textures = apply_alias(def.textures)
 	return def
 end
 
 local mt_register_node = minetest.register_node
 local mt_register_tool = minetest.register_tool
 local mt_register_craftitem = minetest.register_craftitem
+local mt_register_entity = minetest.register_entity
 
 function minetest.register_node(name, def) 
 	mt_register_node(name, def_alias(def))
@@ -67,6 +70,10 @@ end
 
 function minetest.register_craftitem(name, def) 
 	mt_register_craftitem(name, def_alias(def))
+end
+
+function minetest.register_entity(name, def) 
+	mt_register_entity(name, def_alias(def))
 end
 
 alias["default_acacia_bush_sapling.png"] = "acacia_bush_sapling.png"
