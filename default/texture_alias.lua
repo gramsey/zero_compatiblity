@@ -1,4 +1,5 @@
-local alias = {}
+default.shim.texture_alias = {}
+local alias = default.shim.texture_alias
 
 local function get_alias(s)
 	if s:find("^", 1, true) and s:find("default_", 1, true) then
